@@ -1,17 +1,11 @@
-graph TD
-    A([Start]) --> B[User Earns Income];
-    B --> C[Record Income Manually<br>(e.g., in a notebook)];
-    C --> D[Record Daily Expenses Manually];
-    D --> E[Manually Calculate Totals<br>(Sum income, sum expenses)];
-    E --> F[Review Financial Records];
-    F --> G{Are Records Accurate?};
-    
-    subgraph Error Correction Loop
-        G -- No --> H[Find & Correct Errors];
-        H --> E;
-    end
-
-    G -- Yes --> B;
-
-    style H fill:#f8d7da,stroke:#c87179,stroke-width:2px
-    style A fill:#d4edda,stroke:#5c9e6e,stroke-width:2px
+4.3.1: Use Case Diagram for the Current System
+A Use Case Diagram shows the interaction between users and the system.
+In the Personal Finance Tracker, the main user interacts with the system to perform the following tasks:
+•	Register and login
+•	Add income records
+•	Add expense records
+•	Create budgets
+•	Track savings goals
+•	View financial reports
+(Figure 6: Use Case Diagram for Personal Finance Tracker System)
+________________________________________
